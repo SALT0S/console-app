@@ -25,11 +25,6 @@ namespace ConsoleApp1.Models
         {
             base.OnModelCreating(builder);
             builder.Entity<StudentAddress>().HasKey(v => v.StudentID);
-           
-
-
         }
-
     }
-
 }

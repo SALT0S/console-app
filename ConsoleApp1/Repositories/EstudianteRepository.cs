@@ -11,13 +11,10 @@ namespace ConsoleApp1.Repositories
     {
         private readonly SchoolContext _context= new SchoolContext();
 
-        
         public async Task guardarEstudiante(Student student)
         {
-                       
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
- 
         }
     }
 }
